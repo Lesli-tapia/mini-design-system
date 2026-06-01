@@ -10,6 +10,7 @@
   --accent: #7d5a44;
   --text: #4a342a;
   --bg: #f5f1ea;
+  --second: #cb853f;
 
   /* TIPOGRAFÍA */
 
@@ -106,16 +107,20 @@ small {
 
 .light {
   background-color: white;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--primary);
 }
 
+.second {
+  background-color: var(--second);
+  color: white;
+}
 
 /* =========================
    BOTÓN
 ========================= */
 
 .btn {
-  background-color: var(--accent);
+  background-color: var(--second);
   color: white;
 
   font-family: var(--font-body);
@@ -134,4 +139,149 @@ small {
 
 .btn:hover {
   opacity: 0.7;
+}
+
+
+.btn-2 {
+  background-color: var(--primary);
+  color: var(--text);
+
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  font-weight: bold;
+
+  padding: var(--space-md);
+
+  border: none;
+  border-radius: 9px;
+
+  cursor: pointer;
+
+  transition: opacity 0.2s;
+}
+
+.btn-2:hover {
+  opacity: 0.7;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+  background-color: white;
+
+  padding: var(--space-lg);
+
+  border-radius: 25px;
+
+  border: 2px solid var(--primary);
+
+  max-width: 400px;
+}
+
+
+.card-2 {
+  background-color: var(--accent);
+  color: white;
+
+  padding: var(--space-lg);
+
+  border-radius: 25px;
+
+  border: 2px solid var(--primary);
+
+  max-width: 400px;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.input {
+  padding: var(--space-md);
+
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+
+  border: 2px solid var(--primary);
+  border-radius: 16px;
+
+  width: 300px;
+}
+
+.input:focus {
+  outline: 2px solid var(--primary);
+}
+
+
+/* =========================
+   BADGE
+========================= */
+
+.badge {
+  background-color: var(--primary);
+
+  color: var(--text);
+
+  padding: 9px 14px;
+
+  border-radius: 999px;
+
+  font-size: var(--text-sm);
+
+  margin-right: var(--space-md);
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+
+  gap: var(--space-lg);
+
+  background-color: var(--text);
+
+  padding: var(--space-md);
+
+  border-radius: 30px;
+}
+
+.navbar a {
+  color: white;
+
+  text-decoration: none;
+
+  font-weight: bold;
+}
+
+
+/* =========================
+   AVATAR
+========================= */
+
+.avatar-card {
+  background-color: white;
+
+  padding: var(--space-md);
+
+  border-radius: 25px;
+
+  border: 2px solid var(--primary);
+
+  max-width: 250px;
+
+  text-align: center;
+}
+
+.avatar {
+  width: 170px;
+  height: 170px;
+
+  border-radius: 50%;
 }
