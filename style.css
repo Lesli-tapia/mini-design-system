@@ -1,0 +1,137 @@
+/* =========================
+  DISEÑO DE COMPONENTES
+========================= */
+
+:root {
+
+  /* COLORES */
+
+  --primary: #d7c9b8;
+  --accent: #7d5a44;
+  --text: #4a342a;
+  --bg: #f5f1ea;
+
+  /* TIPOGRAFÍA */
+
+  --font-title: 'Petrona', serif;
+  --font-body: 'ElmsSans', sans-serif;
+
+  --text-lg: 3rem;
+  --text-md: 1.1rem;
+  --text-sm: 0.7rem;
+
+  /* SPACING */
+
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 36px;
+
+}
+
+
+/* =========================
+   ESTILOS GLOBALES
+========================= */
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg);
+  color: var(--text);
+
+  margin: 0;
+  padding: var(--space-lg);
+
+  line-height: 1.6;
+}
+
+section {
+  margin-top: var(--space-lg);
+}
+
+h1,
+h2 {
+  font-family: var(--font-title);
+}
+
+h1 {
+  font-size: var(--text-lg);
+}
+
+p {
+  font-size: var(--text-md);
+}
+
+small {
+  font-size: var(--text-sm);
+}
+
+
+/* =========================
+   COLORES
+========================= */
+
+.colors {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.color-card {
+  width: 140px;
+  height: 140px;
+
+  padding: var(--space-md);
+
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.primary {
+  background-color: var(--primary);
+  color: var(--text);
+}
+
+.accent {
+  background-color: var(--accent);
+  color: white;
+}
+
+.dark {
+  background-color: var(--text);
+  color: white;
+}
+
+.light {
+  background-color: white;
+  border: 1px solid #d1d5db;
+}
+
+
+/* =========================
+   BOTÓN
+========================= */
+
+.btn {
+  background-color: var(--accent);
+  color: white;
+
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  font-weight: bold;
+
+  padding: var(--space-md);
+
+  border: none;
+  border-radius: 9px;
+
+  cursor: pointer;
+
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
